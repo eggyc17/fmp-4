@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://c08sroxax81pv"]
+
+[ext_resource type="PackedScene" uid="uid://cgkyx8yptwsv3" path="res://coin.tscn" id="2_ontke"]
+[ext_resource type="PackedScene" uid="uid://bljqvyl85jt2f" path="res://Assets/Models/snake(V5).glb" id="3_nj2r4"]
+[ext_resource type="PackedScene" uid="uid://8fcyejv3cidf" path="res://Assets/idle-animation-robot.glb" id="4_7ptsg"]
+[ext_resource type="PackedScene" uid="uid://cl32j274lrnqj" path="res://scenes/player.tscn" id="4_w4ihh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sxn3n"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_4jqj0"]
+sky_material = SubResource("ProceduralSkyMaterial_sxn3n")
+
+[sub_resource type="Environment" id="Environment_krrl7"]
+background_mode = 2
+sky = SubResource("Sky_4jqj0")
+tonemap_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qm585"]
+size = Vector2(10, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wvj1s"]
+data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0, -5)
+
+[node name="Plane" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_krrl7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.8465, 0, 0, 0, 1, 0, 0, 0, 1.86727, 0, 0, 0)
+mesh = SubResource("PlaneMesh_qm585")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_wvj1s")
+
+[node name="Coin" parent="." instance=ExtResource("2_ontke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.38917, -6.04565)
+
+[node name="snake(V4)" parent="." instance=ExtResource("3_nj2r4")]
+transform = Transform3D(0.0824276, 0, 0, 0, 0.0824276, 0, 0, 0, 0.0624446, 2.55018, 0.822247, -3.61485)
+
+[node name="Player2" parent="." instance=ExtResource("4_w4ihh")]
+transform = Transform3D(0.599528, 0, 0, 0, 0.599528, 0, 0, 0, 0.599528, 0.0912666, 0.854935, 0.148634)
+sens_horizontal = 0.2
+sens_vertical = 0.2
+
+[node name="idle-animation-robot" parent="." instance=ExtResource("4_7ptsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.27873, -2.38419e-07, -1.3173)

@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://o33r6qr0mr35"]
+
+[ext_resource type="PackedScene" uid="uid://8fcyejv3cidf" path="res://Assets/idle-animation-robot.glb" id="1_tlsmv"]
+
+[node name="idle-animation-robot" instance=ExtResource("1_tlsmv")]
+
+[node name="Skeleton3D" parent="metarig" index="0"]
+bones/0/position = Vector3(-0.0115156, 0.31284, 0.211119)
+bones/1/rotation = Quaternion(0.455641, 0.422453, 0.614386, -0.486267)
+bones/2/position = Vector3(0.00669676, 1.16033, -0.0260084)
+bones/2/rotation = Quaternion(-0.282826, 0.0301642, 0.0642135, 0.956544)
+bones/3/rotation = Quaternion(-0.00608747, 0.0046077, 0.00142334, 0.99997)
+bones/4/rotation = Quaternion(0.112501, -0.0267613, -0.0293394, 0.992858)
+bones/5/rotation = Quaternion(0.0672009, 1.56464e-10, 2.32304e-09, 0.997739)
+bones/7/rotation = Quaternion(-0.29903, -0.029595, -0.0659103, 0.951505)
+bones/8/rotation = Quaternion(-0.00584847, -0.00442041, -0.00131801, 0.999972)
+bones/10/rotation = Quaternion(-0.318806, -0.471524, 0.466024, 0.677385)
+bones/11/rotation = Quaternion(0.0750332, -0.00805653, 0.00936913, 0.997105)
+bones/12/rotation = Quaternion(-0.655474, -1.17779e-09, -1.48467e-09, 0.755218)
+bones/13/position = Vector3(0.759632, -1.51361, 0.140326)
+bones/15/rotation = Quaternion(-0.318806, 0.471524, -0.466024, 0.677385)
+bones/16/rotation = Quaternion(0.0750332, 0.00805653, -0.00936913, 0.997105)
+bones/17/rotation = Quaternion(-0.655474, 1.17779e-09, 1.48467e-09, 0.755218)
+bones/18/position = Vector3(-0.759632, -1.51361, 0.140326)
+bones/19/position = Vector3(3.64616, -1.24266, -0.052083)
+bones/20/position = Vector3(-3.64616, -1.24266, -0.052083)

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cncf0y6fdc3n2"]
+
+[ext_resource type="PackedScene" uid="uid://bljqvyl85jt2f" path="res://Assets/Models/snake(V5).glb" id="1_80b4h"]
+
+[node name="snake(V5)" instance=ExtResource("1_80b4h")]

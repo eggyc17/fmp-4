@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b33vhoej6ni72"]
+
+[node name="RiggedHumanoid_Rigify1 (1) (1)"]
+
+[node name="Skeleton3D" parent="root" index="0"]
+bones/0/position = Vector3(-0.0115156, 0.31284, 0.211119)
+bones/0/rotation = Quaternion(-0.154044, -0.00302464, -0.0186824, 0.987883)
+bones/1/rotation = Quaternion(0.124848, 0.108787, -0.707951, 0.686574)
+bones/2/position = Vector3(-0.282924, 1.1124, 0.118474)
+bones/2/rotation = Quaternion(0.18542, -0.00193624, -0.524428, 0.831018)
+bones/3/rotation = Quaternion(0.00154805, -0.00839204, -0.00609034, 0.999945)
+bones/5/rotation = Quaternion(0.0672009, 2.82848e-09, 1.81422e-08, 0.997739)
+bones/6/position = Vector3(0.201395, 0.665452, 0.0150756)
+bones/7/position = Vector3(0.536862, 1.10473, 0.0495614)
+bones/7/rotation = Quaternion(-0.208164, 0.0198638, 0.610224, 0.764134)
+bones/8/rotation = Quaternion(-0.00261696, 0.0129796, 0.0062079, 0.999893)
+bones/9/position = Vector3(-0.0115156, 0.31284, 0.211119)
+bones/10/rotation = Quaternion(-0.544903, 0.157761, 0.24737, 0.785493)
+bones/11/rotation = Quaternion(-8.24087e-05, 0.00131452, 0.0019225, 0.999997)
+bones/13/position = Vector3(0.759632, -1.51361, -0.798628)
+bones/14/position = Vector3(0.0115156, 0.31284, 0.211119)
+bones/15/rotation = Quaternion(-0.558888, 0.0953564, 0.119419, 0.81504)
+bones/16/rotation = Quaternion(-0.00122282, -7.86475e-05, -0.00221774, 0.999997)
+bones/18/position = Vector3(-0.759632, -1.51361, 0.733996)
+bones/19/position = Vector3(1.91292, -1.12342, 0.945283)
+bones/20/position = Vector3(-1.35003, -0.881216, -0.613691)
